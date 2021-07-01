@@ -1,0 +1,23 @@
+#container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#gameButtons {
+	border: 1px solid #000;
+	width: 25%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+#gameResults {
+	border: 1px solid #000;
+	width: 25%;
+}
+
+#pastGames {
+	border: 1px solid #000;
+	width: 25%;
+}
