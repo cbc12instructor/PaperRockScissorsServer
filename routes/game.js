@@ -3,16 +3,11 @@ const router = express.Router();
 
 const options = ['paper', 'rock', 'scissors'];
 
-// return object = { 'result': 'won/lost/tie', player: 'paper', 'computer': 'rock' }
+// return JSON object = { 'result': 'won/lost/tie', player: 'paper', 'computer': 'rock' }
 
-
-// paper
+// player choice is determined by the URL route
 router.get('/paper', paperRockScissorsChoice);
-
-// rock
 router.get('/rock', paperRockScissorsChoice);
-
-// scissors
 router.get('/scissors', paperRockScissorsChoice);
 
 // gets a computer choice
