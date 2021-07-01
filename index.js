@@ -8,4 +8,4 @@ app.use('/game', gameRoutes);
 
 app.use( express.static('html') );
 
-app.listen(80);
+app.listen(process.env.PORT || 5000);
