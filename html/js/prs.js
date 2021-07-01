@@ -11,9 +11,23 @@ document.addEventListener('DOMContentLoaded', function() {
 			let xhr = new XMLHttpRequest();
 			xhr.onload = function() {
 				// update page elements with game results
+				let results = JSON.parse(this.responseText);
+
+				document.getElementById('gameStatus').innerHTML = 'You ' + results.result;
+				document.getElementById('gameContent').innerHTML = `You picked <strong>${results.player}</strong>, the computer picked <strong>${results.computer}</strong>`;
+				/*
+				<ul id="gameHistoryList">
+				<li>You won: paper beats rock</li>
+				*/
+				document.getElementById('gameHistoryList').innerHTML = `<li>You ${results.result}: ${results.player} // ${results.computer}</li>` + 
+					document.getElementById('gameHistoryList').innerHTML;
+
+
 			};
 			xhr.open('GET', `/game/${playerChoice}`);
 			xhr.send();
+
+			document.getElementById('playerChoice').innerText = playerChoice;
 		}
 	});
 });
