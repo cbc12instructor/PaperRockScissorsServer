@@ -1,0 +1,22 @@
+{
+  "name": "paperrockscissorsserver",
+  "version": "1.0.0",
+  "description": "Paper Rock Scissors Express Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbc12instructor/PaperRockScissorsServer.git"
+  },
+  "author": "Eric Harrison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbc12instructor/PaperRockScissorsServer/issues"
+  },
+  "homepage": "https://github.com/cbc12instructor/PaperRockScissorsServer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
