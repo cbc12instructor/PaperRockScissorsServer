@@ -1,7 +1,7 @@
 const express = require('express');
 const app     = express();
 
-// game routes contains all game logic for /paper/rock/scissors
+// game routes contains all game logic for /paper/rock/scissors 
 const gameRoutes = require('./routes/game.js');
 
 app.use('/game', gameRoutes);
